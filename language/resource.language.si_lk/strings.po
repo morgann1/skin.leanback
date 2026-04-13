@@ -1,6 +1,6 @@
 # Kodi Media Center language file
 # Addon Name: Estuary
-# Addon id: skin.estuary
+# Addon id: skin.leanback
 # Addon Provider: phil65, Ichabod Fletchman
 msgid ""
 msgstr ""
