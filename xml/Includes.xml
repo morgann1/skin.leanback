@@ -1235,14 +1235,7 @@
 		<control type="image">
 			<depth>DepthBackground</depth>
 			<include>FullScreenDimensions</include>
-			<aspectratio>scale</aspectratio>
-			<texture colordiffuse="primary_background">special://skin/extras/backgrounds/primary.jpg</texture>
-		</control>
-		<control type="image">
-			<depth>DepthBackground</depth>
-			<include>FullScreenDimensions</include>
-			<aspectratio>scale</aspectratio>
-			<texture colordiffuse="secondary_background" fallback="special://skin/extras/backgrounds/pattern1.jpg">$INFO[Skin.String(background_overlay),special://skin/extras/backgrounds/pattern,.jpg]</texture>
+			<texture colordiffuse="primary_background">colors/white.png</texture>
 		</control>
 	</include>
 	<include name="DefaultBackground">
@@ -1305,13 +1298,6 @@
 				<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(visualisation) | Window.Next(screencalibration)">WindowClose</animation>
 				<animation effect="fade" start="0" end="100" time="300" condition="Window.Previous(fullscreenvideo) | Window.Previous(startup) | Window.Previous(visualisation)">WindowOpen</animation>
 				<bottom>0</bottom>
-				<control type="image">
-					<left>0</left>
-					<bottom>0</bottom>
-					<width>110%</width>
-					<height>115</height>
-					<texture flipy="true">frame/InfoBar.png</texture>
-				</control>
 				<control type="group">
 					<visible>$PARAM[info_visible]</visible>
 					<visible>!System.HasActiveModalDialog</visible>
