@@ -2,6 +2,7 @@
 <window>
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<backgroundcolor>background</backgroundcolor>
+	<onload>SetProperty(nav_id,home,Home)</onload>
 	<controls>
 		<control type="button" id="20000">
 			<include>HiddenObject</include>
@@ -46,7 +47,7 @@
 				<include>OpenClose_Right</include>
 				<!-- Home tab: shows a mix of movies + shows -->
 				<control type="group" id="4500">
-					<visible>String.IsEqual(Container(9000).ListItem.Property(id),home)</visible>
+					<visible>String.IsEqual(Window(Home).Property(nav_id),home)</visible>
 					<control type="grouplist" id="4501">
 						<include>WidgetGroupListCommon</include>
 						<pagecontrol>4510</pagecontrol>
@@ -74,7 +75,7 @@
 					</include>
 				</control>
 				<control type="group" id="5000">
-					<visible>String.IsEqual(Container(9000).ListItem.Property(id),movies)</visible>
+					<visible>String.IsEqual(Window(Home).Property(nav_id),movies)</visible>
 					<include content="Visible_Right_Delayed">
 						<param name="id" value="movies"/>
 					</include>
@@ -143,7 +144,7 @@
 					</include>
 				</control>
 				<control type="group" id="6000">
-					<visible>String.IsEqual(Container(9000).ListItem.Property(id),tvshows)</visible>
+					<visible>String.IsEqual(Window(Home).Property(nav_id),tvshows)</visible>
 					<include content="Visible_Right_Delayed">
 						<param name="id" value="tvshows"/>
 					</include>
@@ -210,7 +211,7 @@
 					</include>
 				</control>
 				<control type="group" id="7000">
-					<visible>String.IsEqual(Container(9000).ListItem.Property(id),music)</visible>
+					<visible>String.IsEqual(Window(Home).Property(nav_id),music)</visible>
 					<include content="Visible_Right_Delayed">
 						<param name="id" value="music"/>
 					</include>
@@ -292,7 +293,7 @@
 					</include>
 				</control>
 				<control type="group" id="8000">
-					<visible>String.IsEqual(Container(9000).ListItem.Property(id),addons)</visible>
+					<visible>String.IsEqual(Window(Home).Property(nav_id),addons)</visible>
 					<include content="Visible_Right_Delayed">
 						<param name="id" value="addons"/>
 					</include>
@@ -374,7 +375,7 @@
 					</include>
 				</control>
 				<control type="group" id="11000">
-					<visible>String.IsEqual(Container(9000).ListItem.Property(id),video)</visible>
+					<visible>String.IsEqual(Window(Home).Property(nav_id),video)</visible>
 					<include content="Visible_Right_Delayed">
 						<param name="id" value="video"/>
 					</include>
@@ -414,7 +415,7 @@
 					</include>
 				</control>
 				<control type="group" id="12000">
-					<visible>String.IsEqual(Container(9000).ListItem.Property(id),livetv)</visible>
+					<visible>String.IsEqual(Window(Home).Property(nav_id),livetv)</visible>
 					<include content="Visible_Right_Delayed">
 						<param name="id" value="livetv"/>
 					</include>
@@ -486,7 +487,7 @@
 					</include>
 				</control>
 				<control type="group" id="13000">
-					<visible>String.IsEqual(Container(9000).ListItem.Property(id),radio)</visible>
+					<visible>String.IsEqual(Window(Home).Property(nav_id),radio)</visible>
 					<include content="Visible_Right_Delayed">
 						<param name="id" value="radio"/>
 					</include>
@@ -558,7 +559,7 @@
 					</include>
 				</control>
 				<control type="group" id="14000">
-					<visible>String.IsEqual(Container(9000).ListItem.Property(id),favorites)</visible>
+					<visible>String.IsEqual(Window(Home).Property(nav_id),favorites)</visible>
 					<include content="Visible_Right_Delayed">
 						<param name="id" value="favorites"/>
 					</include>
@@ -613,7 +614,7 @@
 					</include>
 				</control>
 				<control type="group" id="15000">
-					<visible>String.IsEqual(Container(9000).ListItem.Property(id),weather)</visible>
+					<visible>String.IsEqual(Window(Home).Property(nav_id),weather)</visible>
 					<include content="Visible_Right_Delayed">
 						<param name="id" value="weather"/>
 					</include>
@@ -721,7 +722,7 @@
 					</include>
 				</control>
 				<control type="group" id="16000">
-					<visible>String.IsEqual(Container(9000).ListItem.Property(id),musicvideos)</visible>
+					<visible>String.IsEqual(Window(Home).Property(nav_id),musicvideos)</visible>
 					<include content="Visible_Right_Delayed">
 						<param name="id" value="musicvideos"/>
 					</include>
@@ -815,7 +816,7 @@
 					</include>
 				</control>
 				<control type="group" id="4000">
-					<visible>String.IsEqual(Container(9000).ListItem.Property(id),pictures)</visible>
+					<visible>String.IsEqual(Window(Home).Property(nav_id),pictures)</visible>
 					<include content="Visible_Right_Delayed">
 						<param name="id" value="pictures"/>
 					</include>
@@ -831,7 +832,7 @@
 					</control>
 				</control>
 				<control type="group" id="17000">
-					<visible>String.IsEqual(Container(9000).ListItem.Property(id),games)</visible>
+					<visible>String.IsEqual(Window(Home).Property(nav_id),games)</visible>
 					<include content="Visible_Right_Delayed">
 						<param name="id" value="games"/>
 					</include>
@@ -861,7 +862,7 @@
 					</include>
 				</control>
 				<control type="group" id="21000">
-					<visible>String.IsEqual(Container(9000).ListItem.Property(id),disc)</visible>
+					<visible>String.IsEqual(Window(Home).Property(nav_id),disc)</visible>
 					<include content="Visible_Right_Delayed">
 						<param name="id" value="disc"/>
 					</include>
@@ -885,71 +886,116 @@
 				<top>30</top>
 				<left>80</left>
 				<right>80</right>
-				<height>60</height>
+				<height>64</height>
 				<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
 				<animation effect="slide" end="0,-90" time="300" tween="sine" easing="inout" condition="$EXP[infodialog_active]">conditional</animation>
+				<!-- Left nav -->
 				<control type="grouplist" id="700">
 					<orientation>horizontal</orientation>
 					<left>0</left>
 					<top>0</top>
-					<height>60</height>
-					<width>100%</width>
+					<height>64</height>
+					<width>50%</width>
 					<itemgap>0</itemgap>
-					<ondown>SetFocus($INFO[Container(9000).ListItem.Property(menu_id)])</ondown>
-					<!-- Nav items -->
-					<control type="fixedlist" id="9000">
-						<orientation>horizontal</orientation>
-						<left>0</left>
-						<top>0</top>
-						<width>720</width>
-						<height>60</height>
-						<movement>3</movement>
-						<focusposition>0</focusposition>
-						<onfocus>ClearProperty(listposition,home)</onfocus>
-						<ondown>SetFocus($INFO[Container(9000).ListItem.Property(menu_id)])</ondown>
-						<onright>801</onright>
-						<scrolltime tween="cubic" easing="out">300</scrolltime>
-						<include>NavButton</include>
-						<content>
-							<item>
-								<label>Home</label>
-								<onclick>noop</onclick>
-								<property name="menu_id">$NUMBER[4500]</property>
-								<property name="id">home</property>
-							</item>
-							<item>
-								<label>Categories</label>
-								<onclick>ActivateWindow(Videos,videodb://movies/genres/,return)</onclick>
-								<property name="menu_id">$NUMBER[5000]</property>
-								<property name="id">categories</property>
-							</item>
-							<item>
-								<label>Movies</label>
-								<onclick condition="Library.HasContent(movies)">ActivateWindow(Videos,videodb://movies/titles/,return)</onclick>
-								<onclick condition="!Library.HasContent(movies)">ActivateWindow(Videos,sources://video/,return)</onclick>
-								<property name="menu_id">$NUMBER[5000]</property>
-								<property name="id">movies</property>
-							</item>
-							<item>
-								<label>Shows</label>
-								<onclick condition="Library.HasContent(tvshows)">ActivateWindow(Videos,videodb://tvshows/titles/,return)</onclick>
-								<onclick condition="!Library.HasContent(tvshows)">ActivateWindow(Videos,sources://video/,return)</onclick>
-								<property name="menu_id">$NUMBER[6000]</property>
-								<property name="id">tvshows</property>
-							</item>
-						</content>
-					</control>
-					<!-- Search Icon -->
-					<control type="button" id="801">
-						<width>60</width>
-						<height>60</height>
-						<align>center</align>
+					<onright>SetFocus(802)</onright>
+					<include content="NavButton">
+						<param name="id">9000</param>
+						<param name="width">180</param>
+						<param name="label">Home</param>
+						<param name="nav_id">home</param>
+						<param name="onclick">noop</param>
+						<param name="ondown">SetFocus(4500)</param>
+					</include>
+					<include content="NavButton">
+						<param name="id">9001</param>
+						<param name="width">212</param>
+						<param name="label">Categories</param>
+						<param name="nav_id">categories</param>
+						<param name="onclick">ActivateWindow(Videos,videodb://movies/genres/,return)</param>
+						<param name="ondown">SetFocus(5000)</param>
+					</include>
+					<include content="NavButton">
+						<param name="id">9002</param>
+						<param name="width">180</param>
+						<param name="label">Movies</param>
+						<param name="nav_id">movies</param>
+						<param name="onclick">ActivateWindow(Videos,videodb://movies/titles/,return)</param>
+						<param name="ondown">SetFocus(5000)</param>
+					</include>
+					<include content="NavButton">
+						<param name="id">9003</param>
+						<param name="width">180</param>
+						<param name="label">Shows</param>
+						<param name="nav_id">tvshows</param>
+						<param name="onclick">ActivateWindow(Videos,videodb://tvshows/titles/,return)</param>
+						<param name="ondown">SetFocus(6000)</param>
+						<param name="onright">SetFocus(801)</param>
+					</include>
+					<control type="radiobutton" id="801">
+						<width>64</width>
+						<height>64</height>
 						<font></font>
-						<texturefocus colordiffuse="button_focus">icons/search.png</texturefocus>
-						<texturenofocus colordiffuse="grey">icons/search.png</texturenofocus>
+						<label></label>
+						<texturefocus border="8" colordiffuse="FFC7C6CA">rounded_rect.png</texturefocus>
+						<texturenofocus />
+						<radiowidth>48</radiowidth>
+						<radioheight>48</radioheight>
+						<radioposx>8</radioposx>
+						<radioposy>8</radioposy>
+						<textureradioonfocus colordiffuse="FF1A1C1E">icons/search.png</textureradioonfocus>
+						<textureradioonnofocus colordiffuse="FFE3E2E6">icons/search.png</textureradioonnofocus>
+						<textureradioofffocus colordiffuse="FF1A1C1E">icons/search.png</textureradioofffocus>
+						<textureradiooffnofocus colordiffuse="FFE3E2E6">icons/search.png</textureradiooffnofocus>
 						<onclick>ActivateWindow(1107)</onclick>
-						<onleft>9000</onleft>
+						<ondown>2000</ondown>
+						<onright>SetFocus(802)</onright>
+					</control>
+				</control>
+				<!-- Right nav -->
+				<control type="grouplist" id="701">
+					<orientation>horizontal</orientation>
+					<align>right</align>
+					<right>0</right>
+					<top>0</top>
+					<height>64</height>
+					<width>200</width>
+					<itemgap>0</itemgap>
+					<onleft>SetFocus(801)</onleft>
+					<control type="radiobutton" id="802">
+						<width>64</width>
+						<height>64</height>
+						<font></font>
+						<label></label>
+						<texturefocus border="8" colordiffuse="FFC7C6CA">rounded_rect.png</texturefocus>
+						<texturenofocus />
+						<radiowidth>48</radiowidth>
+						<radioheight>48</radioheight>
+						<radioposx>8</radioposx>
+						<radioposy>8</radioposy>
+						<textureradioonfocus colordiffuse="FF1A1C1E">icons/settings.png</textureradioonfocus>
+						<textureradioonnofocus colordiffuse="FFE3E2E6">icons/settings.png</textureradioonnofocus>
+						<textureradioofffocus colordiffuse="FF1A1C1E">icons/settings.png</textureradioofffocus>
+						<textureradiooffnofocus colordiffuse="FFE3E2E6">icons/settings.png</textureradiooffnofocus>
+						<onclick>ActivateWindow(Settings)</onclick>
+						<ondown>2000</ondown>
+					</control>
+					<control type="radiobutton" id="803">
+						<width>64</width>
+						<height>64</height>
+						<font></font>
+						<label></label>
+						<texturefocus border="8" colordiffuse="FFC7C6CA">rounded_rect.png</texturefocus>
+						<texturenofocus />
+						<radiowidth>48</radiowidth>
+						<radioheight>48</radioheight>
+						<radioposx>8</radioposx>
+						<radioposy>8</radioposy>
+						<textureradioonfocus colordiffuse="FF1A1C1E">icons/power.png</textureradioonfocus>
+						<textureradioonnofocus colordiffuse="FFE3E2E6">icons/power.png</textureradioonnofocus>
+						<textureradioofffocus colordiffuse="FF1A1C1E">icons/power.png</textureradioofffocus>
+						<textureradiooffnofocus colordiffuse="FFE3E2E6">icons/power.png</textureradiooffnofocus>
+						<onclick>ActivateWindow(ShutdownMenu)</onclick>
 						<ondown>2000</ondown>
 					</control>
 				</control>

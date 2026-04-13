@@ -34,7 +34,7 @@
 			<control type="panel" id="2">
 				<top>148</top>
 				<left>30</left>
-				<visible>Container(9000).Hasfocus(2)</visible>
+				<visible>Control.HasFocus(9001)</visible>
 				<right>0</right>
 				<bottom>137</bottom>
 				<onleft>9000</onleft>
@@ -154,7 +154,7 @@
 				</focusedlayout>
 			</control>
 			<control type="grouplist" id="9001">
-				<visible>Container(9000).Hasfocus(1)</visible>
+				<visible>Control.HasFocus(9000)</visible>
 				<right>0</right>
 				<height>735</height>
 				<top>163</top>

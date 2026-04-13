@@ -322,45 +322,74 @@
 		</definition>
 	</include>
 	<include name="NavButton">
-		<param name="width">180</param>
-		<param name="height">60</param>
+		<param name="width">212</param>
+		<param name="height">64</param>
+		<param name="ondown">noop</param>
+		<param name="onleft">noop</param>
+		<param name="onright">noop</param>
 		<definition>
-			<focusedlayout width="$PARAM[width]" height="$PARAM[height]">
-				<control type="label">
-					<left>0</left>
-					<top>0</top>
+			<control type="button" id="$PARAM[id]">
+				<width>$PARAM[width]</width>
+				<height>$PARAM[height]</height>
+				<font>font28</font>
+				<textcolor>FFE3E2E6</textcolor>
+				<focusedcolor>FF1A1C1E</focusedcolor>
+				<align>center</align>
+				<aligny>center</aligny>
+				<texturefocus border="8" colordiffuse="FFC7C6CA">rounded_rect.png</texturefocus>
+				<texturenofocus />
+				<label>$PARAM[label]</label>
+				<onfocus>SetProperty(nav_id,$PARAM[nav_id],Home)</onfocus>
+				<onclick>$PARAM[onclick]</onclick>
+				<ondown>$PARAM[ondown]</ondown>
+				<onleft>$PARAM[onleft]</onleft>
+				<onright>$PARAM[onright]</onright>
+			</control>
+		</definition>
+	</include>
+	<include name="NavIconButton">
+		<param name="width">64</param>
+		<param name="height">64</param>
+		<param name="icon_size">48</param>
+		<param name="ondown">noop</param>
+		<param name="onleft">noop</param>
+		<param name="onright">noop</param>
+		<definition>
+			<control type="group">
+				<width>$PARAM[width]</width>
+				<height>$PARAM[height]</height>
+				<control type="button" id="$PARAM[id]">
 					<width>$PARAM[width]</width>
 					<height>$PARAM[height]</height>
-					<aligny>center</aligny>
-					<align>center</align>
-					<font>font13</font>
-					<textcolor>white</textcolor>
-					<label>$INFO[ListItem.Label]</label>
-					<shadowcolor>text_shadow</shadowcolor>
+					<font></font>
+					<label></label>
+					<texturefocus border="8" colordiffuse="FFC7C6CA">rounded_rect.png</texturefocus>
+					<texturenofocus />
+					<onclick>$PARAM[onclick]</onclick>
+					<ondown>$PARAM[ondown]</ondown>
+					<onleft>$PARAM[onleft]</onleft>
+					<onright>$PARAM[onright]</onright>
 				</control>
-				<!-- Active indicator bar -->
+				<!-- Icon: dark when focused, light when unfocused -->
 				<control type="image">
-					<left>30</left>
-					<bottom>0</bottom>
-					<width>120</width>
-					<height>3</height>
-					<texture colordiffuse="button_focus">colors/white.png</texture>
+					<centerleft>50%</centerleft>
+					<centertop>50%</centertop>
+					<width>$PARAM[icon_size]</width>
+					<height>$PARAM[icon_size]</height>
+					<aspectratio>keep</aspectratio>
+					<texture colordiffuse="FF1A1C1E">$PARAM[icon]</texture>
+					<visible>Control.HasFocus($PARAM[id])</visible>
 				</control>
-			</focusedlayout>
-			<itemlayout width="$PARAM[width]" height="$PARAM[height]">
-				<control type="label">
-					<left>0</left>
-					<top>0</top>
-					<width>$PARAM[width]</width>
-					<height>$PARAM[height]</height>
-					<aligny>center</aligny>
-					<align>center</align>
-					<font>font13</font>
-					<textcolor>grey</textcolor>
-					<label>$INFO[ListItem.Label]</label>
-					<shadowcolor>text_shadow</shadowcolor>
+				<control type="image">
+					<centerleft>50%</centerleft>
+					<centertop>50%</centertop>
+					<width>$PARAM[icon_size]</width>
+					<height>$PARAM[icon_size]</height>
+					<aspectratio>keep</aspectratio>
+					<texture colordiffuse="FFE3E2E6">$PARAM[icon]</texture>
+					<visible>!Control.HasFocus($PARAM[id])</visible>
 				</control>
-			</itemlayout>
+			</control>
 		</definition>
 	</include>
 	<include name="ButtonMenuList">

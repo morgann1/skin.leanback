@@ -54,6 +54,12 @@
 			<linespacing>0.8</linespacing>
 		</font>
 		<font>
+			<name>font28</name>
+			<filename>Inter-Medium.ttf</filename>
+			<size>28</size>
+			<style>lighten</style>
+		</font>
+		<font>
 			<name>font32</name>
 			<filename>Inter-Regular.ttf</filename>
 			<size>32</size>
@@ -200,6 +206,11 @@
 			<filename>arial.ttf</filename>
 			<size>27</size>
 			<linespacing>0.8</linespacing>
+		</font>
+		<font>
+			<name>font28</name>
+			<filename>Inter-Medium.ttf</filename>
+			<size>28</size>
 		</font>
 		<font>
 			<name>font32</name>

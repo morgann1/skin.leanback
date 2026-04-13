@@ -29,7 +29,7 @@
 				<onright>60</onright>
 				<onup>700</onup>
 				<ondown>700</ondown>
-				<visible>Container(9000).HasFocus(1)</visible>
+				<visible>Control.HasFocus(9000)</visible>
 				<control type="radiobutton" id="701">
 					<label>$LOCALIZE[31095]</label>
 					<include>DefaultSettingButton</include>
@@ -83,7 +83,7 @@
 				<onright>60</onright>
 				<onup>600</onup>
 				<ondown>600</ondown>
-				<visible>Container(9000).HasFocus(3)</visible>
+				<visible>Control.HasFocus(9002)</visible>
 				<control type="radiobutton" id="605">
 					<label>$LOCALIZE[31002]</label>
 					<include>DefaultSettingButton</include>
@@ -146,7 +146,7 @@
 				<onup>610</onup>
 				<pagecontrol>60</pagecontrol>
 				<ondown>610</ondown>
-				<visible>Container(9000).HasFocus(2)</visible>
+				<visible>Control.HasFocus(9001)</visible>
 				<control type="radiobutton" id="621">
 					<label>$LOCALIZE[31008]</label>
 					<include>DefaultSettingButton</include>
@@ -282,7 +282,7 @@
 				<onup>610</onup>
 				<pagecontrol>60</pagecontrol>
 				<ondown>610</ondown>
-				<visible>Container(9000).HasFocus(4)</visible>
+				<visible>Control.HasFocus(9003)</visible>
 				<control type="radiobutton" id="623">
 					<label>$LOCALIZE[31172]</label>
 					<include>DefaultSettingButton</include>

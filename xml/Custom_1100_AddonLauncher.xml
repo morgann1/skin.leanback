@@ -89,7 +89,7 @@
 					<focusposition>0</focusposition>
 					<onup>700</onup>
 					<ondown>700</ondown>
-					<onright>SetFocus($INFO[Container(9000).ListItem.Property(menu_id)])</onright>
+					<onright>SetFocus(700)</onright>
 					<scrolltime tween="cubic" easing="out">500</scrolltime>
 					<focusedlayout height="95" width="462">
 						<control type="image">
