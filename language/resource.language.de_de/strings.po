@@ -1,5 +1,5 @@
 # Kodi Media Center language file
-# Addon Name: Estuary
+# Addon Name: Leanback
 # Addon id: skin.leanback
 # Addon Provider: Team Kodi
 msgid ""
@@ -18,16 +18,16 @@ msgstr ""
 "X-Generator: Weblate 5.2.1\n"
 
 msgctxt "Addon Summary"
-msgid "Estuary skin by phil65. (Kodi's default skin)"
-msgstr "Estuary Skin von phil65. (Kodi-Standardskin)"
+msgid "Leanback skin by phil65. (Kodi's default skin)"
+msgstr "Leanback Skin von phil65. (Kodi-Standardskin)"
 
 msgctxt "Addon Description"
-msgid "Estuary is the default skin for Kodi 17.0 and above. It attempts to be easy for first time Kodi users to understand and use."
-msgstr "Estuary ist der Standardskin für Kodi 17.0 und höher. Ziel war es, einen einfach zu bedienenden Skin für neue Kodi-Benutzer zu entwickeln."
+msgid "Leanback is the default skin for Kodi 17.0 and above. It attempts to be easy for first time Kodi users to understand and use."
+msgstr "Leanback ist der Standardskin für Kodi 17.0 und höher. Ziel war es, einen einfach zu bedienenden Skin für neue Kodi-Benutzer zu entwickeln."
 
 msgctxt "Addon Disclaimer"
-msgid "Estuary is the default skin for Kodi, removing it may cause issues"
-msgstr "Estuary ist der Standardskin von Kodi. Ein Entfernen des Skins kann Probleme verursachen"
+msgid "Leanback is the default skin for Kodi, removing it may cause issues"
+msgstr "Leanback ist der Standardskin von Kodi. Ein Entfernen des Skins kann Probleme verursachen"
 
 msgctxt "#31000"
 msgid "Now playing"
