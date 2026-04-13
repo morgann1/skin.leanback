@@ -18,8 +18,8 @@ msgstr ""
 "X-Generator: Weblate 5.2.1\n"
 
 msgctxt "Addon Summary"
-msgid "Leanback skin by phil65. (Kodi's default skin)"
-msgstr "Esturay-drakt av phil65 og Piers. (Kodis forvalgte drakt)"
+msgid "Leanback skin by morgann1. (Kodi's default skin)"
+msgstr "Esturay-drakt av morgann1. (Kodis forvalgte drakt)"
 
 msgctxt "Addon Description"
 msgid "Leanback is the default skin for Kodi 17.0 and above. It attempts to be easy for first time Kodi users to understand and use."

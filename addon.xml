@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.leanback" version="4.0.0" name="Leanback" provider-name="phil65, Ichabod Fletchman">
+<addon id="skin.leanback" version="4.0.0" name="Leanback" provider-name="morgann1">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0"/>
 	</requires>
@@ -30,58 +30,58 @@
 			<screenshot>resources/screenshot-07.jpg</screenshot>
 			<screenshot>resources/screenshot-08.jpg</screenshot>
 		</assets>
-		<summary lang="af_ZA">Leanback oortreksel deur phil65. (Kodi se bestek oortreksel)</summary>
-		<summary lang="ar_SA">مظهر Leanback بواسطة phil65. ( مظهر كودي الافتراضي )</summary>
-		<summary lang="be_BY">Абалонка &quot;Leanback&quot; ад phil65. (прадвызначаная абалонка Kodi)</summary>
-		<summary lang="bg_BG">Leanback облик от phil65 и Piers. (стандартния облик на Kodi)</summary>
-		<summary lang="ca_ES">Aparença Leanback per phil65 i Piers. (aparença predeterminada de Kodi)</summary>
-		<summary lang="cs_CZ">Vzhled Leanback od autora phil65. (Výchozí vzhled Kodi)</summary>
-		<summary lang="da_DK">Leanback skin af phil65 (Kodis standard brugerflade)</summary>
-		<summary lang="de_DE">Leanback Skin von phil65. (Kodi-Standardskin)</summary>
-		<summary lang="el_GR">Το κέλυφος Leanback από τον phil65 και τον Pier. (προεπιλεγμένο κέλυφος του Kodi)</summary>
-		<summary lang="en_GB">Leanback skin by phil65. (Kodi&apos;s default skin)</summary>
-		<summary lang="en_NZ">Leanback skin by phil65 and Piers. (Kodi&apos;s default skin)</summary>
-		<summary lang="en_US">Leanback skin by phil65 and Piers. (Kodi&apos;s default skin)</summary>
-		<summary lang="es_AR">Skin Leanback por phil65 (skin por defecto de Kodi)</summary>
-		<summary lang="es_ES">Skin Leanback por phil65. (skin por defecto de Kodi)</summary>
-		<summary lang="es_MX">Máscara Leanback por phil65 y Piers. (La máscara predeterminada de Kodi)</summary>
-		<summary lang="et_EE">Leanback rüü autor on phil65. (Kodi vaikerüü)</summary>
-		<summary lang="eu_ES">Leanback azala phil65-ek egina. (Kodiren azal lehenetsia)</summary>
-		<summary lang="fa_IR">پوستهٔ اسچوری به دست phil65. (پوستهٔ پیش‌گزیدهٔ کودی)</summary>
-		<summary lang="fi_FI">Leanback-ulkoasun ovat kehittäneet phil65 ja Piers. (Kodin oletusulkoasu)</summary>
-		<summary lang="fr_CA">Habillage Leanback par phil65 et Piers (habillage par défaut de Kodi).</summary>
-		<summary lang="fr_FR">Leanback, un habillage par phil65 et Piers (habillage d&apos;origine de Kodi)</summary>
-		<summary lang="gl_ES">Pel Leanback por phil65 and Piers. (Pel predefinida do Kodi)</summary>
-		<summary lang="he_IL">מעטפת Leanback של phil65 (ברירת המחדל של קודי)</summary>
-		<summary lang="hr_HR">Leanback presvlaka autora phil65 i Piersa. (Zadana Kodi presvlaka)</summary>
-		<summary lang="hu_HU">Leanback felszín. Készítette phil65 és Piers. (Kodi alapértelmezett felszín)</summary>
-		<summary lang="id_ID">Skin Leanback oleh phil65. (Skin default Kodi)</summary>
-		<summary lang="is_IS">Leanback-skinnið eftir phil65. (sjálfgefið útlit Kodi)</summary>
-		<summary lang="it_IT">Skin Leanback di phil65. (Skin predefinita di Kodi)</summary>
-		<summary lang="ja_JP">Leanbackスキン by phil65 and Piers (Kodi デフォルトスキン)</summary>
-		<summary lang="ko_KR">phil65가 만든 Leanback 스킨. (Kodi 기본 스킨)</summary>
-		<summary lang="lt_LT">Leanback teminė išvaizda, kurią sukūrė phil65 ir Piers. (Numatytoji Kodi teminė išvaizda)</summary>
-		<summary lang="lv_LV">Leanback apvalks no phil65. (Kodi noklusējuma apvalks)</summary>
-		<summary lang="mk_MK">Leanback skin by phil65. (Kodi&apos;s default skin)</summary>
-		<summary lang="ms_MY">Kulit Leanback oleh phil65 dan rakan-rakan. (Kulit lalai Kodi)</summary>
-		<summary lang="nb_NO">Esturay-drakt av phil65 og Piers. (Kodis forvalgte drakt)</summary>
-		<summary lang="nl_NL">Leanback skin door phil65 en Piers. (Kodi&apos;s standaardskin)</summary>
-		<summary lang="pl_PL">Skóra Eustary autorstwa phil65. (domyślna skóra Kodi)</summary>
-		<summary lang="pt_BR">Skin Leanback por phil65 e Piers. (Skin padrão do Kodi)</summary>
-		<summary lang="pt_PT">Visual Leanback de phil65 e Piers. (Visual por omissão do Kodi)</summary>
-		<summary lang="ro_RO">Tema Leanback de phil65. (Temă implicită pentru Kodi)</summary>
-		<summary lang="ru_RU">Обложка Leanback от phil65 (стандартная обложка Kodi)</summary>
-		<summary lang="sk_SK">Vzhľad Leanback, vytvorili phil65. (predvolený vzhľad pre Kodi)</summary>
-		<summary lang="sr_RS">Маска Leanback аутора phil65 и Piers. (Подразумевана Коди маска)</summary>
-		<summary lang="sr_RS@latin">Maska Leanback autora phil65 i Piers. (Podrazumevana Kodi maska)</summary>
-		<summary lang="sv_SE">Leanback, ett skal av phil65. (Kodi&apos;s standardskal)</summary>
-		<summary lang="szl">Skōra Leanback ôd phil65 i Piers. (Wychodno skōra Kodi)</summary>
-		<summary lang="th_TH">สกิน Leanback โดย phil65 และ Piers (หน้าตาเริ่มต้นของKodi)</summary>
-		<summary lang="tr_TR">Leanback dış görünümü. phil65 (Kodi&apos;nin varsayılan dış görünümü)</summary>
-		<summary lang="uk_UA">Обкладинка Leanback від phil65 і Piers. (стандартна обкладинка Kodi)</summary>
-		<summary lang="vi_VN">Giao diện Leanback của phil65. (Giao diện mặc định của Kodi)</summary>
-		<summary lang="zh_CN">phil65 开发的 Leanback 皮肤（Kodi 的默认皮肤）。</summary>
-		<summary lang="zh_TW">phil65與Piers 製作的Leanback佈景主題（Kodi的預設佈景主題）</summary>
+		<summary lang="af_ZA">Leanback oortreksel deur morgann1. (Kodi se bestek oortreksel)</summary>
+		<summary lang="ar_SA">مظهر Leanback بواسطة morgann1. ( مظهر كودي الافتراضي )</summary>
+		<summary lang="be_BY">Абалонка &quot;Leanback&quot; ад morgann1. (прадвызначаная абалонка Kodi)</summary>
+		<summary lang="bg_BG">Leanback облик от morgann1. (стандартния облик на Kodi)</summary>
+		<summary lang="ca_ES">Aparença Leanback per morgann1. (aparença predeterminada de Kodi)</summary>
+		<summary lang="cs_CZ">Vzhled Leanback od autora morgann1. (Výchozí vzhled Kodi)</summary>
+		<summary lang="da_DK">Leanback skin af morgann1 (Kodis standard brugerflade)</summary>
+		<summary lang="de_DE">Leanback Skin von morgann1. (Kodi-Standardskin)</summary>
+		<summary lang="el_GR">Το κέλυφος Leanback από τον morgann1. (προεπιλεγμένο κέλυφος του Kodi)</summary>
+		<summary lang="en_GB">Leanback skin by morgann1. (Kodi&apos;s default skin)</summary>
+		<summary lang="en_NZ">Leanback skin by morgann1. (Kodi&apos;s default skin)</summary>
+		<summary lang="en_US">Leanback skin by morgann1. (Kodi&apos;s default skin)</summary>
+		<summary lang="es_AR">Skin Leanback por morgann1 (skin por defecto de Kodi)</summary>
+		<summary lang="es_ES">Skin Leanback por morgann1. (skin por defecto de Kodi)</summary>
+		<summary lang="es_MX">Máscara Leanback por morgann1. (La máscara predeterminada de Kodi)</summary>
+		<summary lang="et_EE">Leanback rüü autor on morgann1. (Kodi vaikerüü)</summary>
+		<summary lang="eu_ES">Leanback azala morgann1-ek egina. (Kodiren azal lehenetsia)</summary>
+		<summary lang="fa_IR">پوستهٔ اسچوری به دست morgann1. (پوستهٔ پیش‌گزیدهٔ کودی)</summary>
+		<summary lang="fi_FI">Leanback-ulkoasun ovat kehittäneet morgann1. (Kodin oletusulkoasu)</summary>
+		<summary lang="fr_CA">Habillage Leanback par morgann1 (habillage par défaut de Kodi).</summary>
+		<summary lang="fr_FR">Leanback, un habillage par morgann1 (habillage d&apos;origine de Kodi)</summary>
+		<summary lang="gl_ES">Pel Leanback por morgann1. (Pel predefinida do Kodi)</summary>
+		<summary lang="he_IL">מעטפת Leanback של morgann1 (ברירת המחדל של קודי)</summary>
+		<summary lang="hr_HR">Leanback presvlaka autora morgann1a. (Zadana Kodi presvlaka)</summary>
+		<summary lang="hu_HU">Leanback felszín. Készítette morgann1. (Kodi alapértelmezett felszín)</summary>
+		<summary lang="id_ID">Skin Leanback oleh morgann1. (Skin default Kodi)</summary>
+		<summary lang="is_IS">Leanback-skinnið eftir morgann1. (sjálfgefið útlit Kodi)</summary>
+		<summary lang="it_IT">Skin Leanback di morgann1. (Skin predefinita di Kodi)</summary>
+		<summary lang="ja_JP">Leanbackスキン by morgann1 (Kodi デフォルトスキン)</summary>
+		<summary lang="ko_KR">morgann1가 만든 Leanback 스킨. (Kodi 기본 스킨)</summary>
+		<summary lang="lt_LT">Leanback teminė išvaizda, kurią sukūrė morgann1. (Numatytoji Kodi teminė išvaizda)</summary>
+		<summary lang="lv_LV">Leanback apvalks no morgann1. (Kodi noklusējuma apvalks)</summary>
+		<summary lang="mk_MK">Leanback skin by morgann1. (Kodi&apos;s default skin)</summary>
+		<summary lang="ms_MY">Kulit Leanback oleh morgann1 dan rakan-rakan. (Kulit lalai Kodi)</summary>
+		<summary lang="nb_NO">Esturay-drakt av morgann1. (Kodis forvalgte drakt)</summary>
+		<summary lang="nl_NL">Leanback skin door morgann1. (Kodi&apos;s standaardskin)</summary>
+		<summary lang="pl_PL">Skóra Eustary autorstwa morgann1. (domyślna skóra Kodi)</summary>
+		<summary lang="pt_BR">Skin Leanback por morgann1. (Skin padrão do Kodi)</summary>
+		<summary lang="pt_PT">Visual Leanback de morgann1. (Visual por omissão do Kodi)</summary>
+		<summary lang="ro_RO">Tema Leanback de morgann1. (Temă implicită pentru Kodi)</summary>
+		<summary lang="ru_RU">Обложка Leanback от morgann1 (стандартная обложка Kodi)</summary>
+		<summary lang="sk_SK">Vzhľad Leanback, vytvorili morgann1. (predvolený vzhľad pre Kodi)</summary>
+		<summary lang="sr_RS">Маска Leanback аутора morgann1. (Подразумевана Коди маска)</summary>
+		<summary lang="sr_RS@latin">Maska Leanback autora morgann1. (Podrazumevana Kodi maska)</summary>
+		<summary lang="sv_SE">Leanback, ett skal av morgann1. (Kodi&apos;s standardskal)</summary>
+		<summary lang="szl">Skōra Leanback ôd morgann1. (Wychodno skōra Kodi)</summary>
+		<summary lang="th_TH">สกิน Leanback โดย morgann1 (หน้าตาเริ่มต้นของKodi)</summary>
+		<summary lang="tr_TR">Leanback dış görünümü. morgann1 (Kodi&apos;nin varsayılan dış görünümü)</summary>
+		<summary lang="uk_UA">Обкладинка Leanback від morgann1. (стандартна обкладинка Kodi)</summary>
+		<summary lang="vi_VN">Giao diện Leanback của morgann1. (Giao diện mặc định của Kodi)</summary>
+		<summary lang="zh_CN">morgann1 开发的 Leanback 皮肤（Kodi 的默认皮肤）。</summary>
+		<summary lang="zh_TW">morgann1 製作的Leanback佈景主題（Kodi的預設佈景主題）</summary>
 		<description lang="af_ZA">Leanback is die bestek oortreksel vir Kodi 17.0 en op. Dit poog om maklik te wees vir eerste keer Kodi gebruikers om te verstaan en te gebruik.</description>
 		<description lang="ar_SA">Leanback هو المظهر الافتراضي ل كودي الإصدار 17.0 و أعلى. يطمح بأن يكون سهل الاستخدام والفهم لمستخدمين كودي الجدد.</description>
 		<description lang="be_BY">Leanback - прадвызначаная абалонка для Kodi 17.0 і пазнейшых версій. Яна будзе простай і зразумелай для карыстальнікаў, якія не мелі досведу працы з Kodi.</description>

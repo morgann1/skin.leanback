@@ -1,7 +1,7 @@
 # Kodi Media Center language file
 # Addon Name: Leanback
 # Addon id: skin.leanback
-# Addon Provider: phil65, Ichabod Fletchman
+# Addon Provider: morgann1
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Main\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: Weblate 4.7.2\n"
 
 msgctxt "Addon Summary"
-msgid "Leanback skin by phil65. (Kodi's default skin)"
+msgid "Leanback skin by morgann1. (Kodi's default skin)"
 msgstr ""
 
 msgctxt "Addon Description"
