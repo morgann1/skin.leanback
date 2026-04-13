@@ -34,8 +34,9 @@
 		<control type="group">
 			<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="$EXP[infodialog_active]">Conditional</animation>
 			<control type="group" id="2000">
-				<left>80</left>
-				<top>160</top>
+				<left>116</left>
+				<right>116</right>
+				<top>208</top>
 				<animation type="Conditional" condition="Control.IsVisible(20000)" reversible="false">
 					<effect type="slide" end="0,20" time="60" tween="sine" />
 					<effect type="slide" end="0,-20" time="180" tween="sine" delay="80" />
@@ -45,34 +46,79 @@
 					<effect type="slide" end="0,20" time="180" tween="sine" delay="80" />
 				</animation>
 				<include>OpenClose_Right</include>
-				<!-- Home tab: shows a mix of movies + shows -->
+				<!-- Home tab: carousel -->
 				<control type="group" id="4500">
 					<visible>String.IsEqual(Window(Home).Property(nav_id),home)</visible>
-					<control type="grouplist" id="4501">
-						<include>WidgetGroupListCommon</include>
-						<pagecontrol>4510</pagecontrol>
-						<include content="WidgetListPoster" condition="Library.HasContent(movies)">
-							<param name="content_path" value="special://skin/playlists/recent_unwatched_movies.xsp"/>
-							<param name="widget_header" value="$LOCALIZE[20386]"/>
-							<param name="widget_target" value="videos"/>
-							<param name="list_id" value="4100"/>
-						</include>
-						<include content="WidgetListEpisodes" condition="Library.HasContent(tvshows)">
-							<param name="content_path" value="special://skin/playlists/recent_unwatched_episodes.xsp"/>
-							<param name="widget_header" value="$LOCALIZE[20387]"/>
-							<param name="widget_target" value="videos"/>
-							<param name="list_id" value="4200"/>
-						</include>
-						<include content="WidgetListPoster" condition="Library.HasContent(movies)">
-							<param name="content_path" value="special://skin/playlists/inprogress_movies.xsp"/>
-							<param name="widget_header" value="$LOCALIZE[31010]"/>
-							<param name="widget_target" value="videos"/>
-							<param name="list_id" value="4300"/>
-						</include>
+					<!-- Placeholder when no library content -->
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>100%</width>
+						<height>640</height>
+						<aspectratio>scale</aspectratio>
+						<texture>special://skin/extras/backgrounds/carousel_placeholder.jpg</texture>
 					</control>
-					<include content="WidgetScrollbar" condition="Skin.HasSetting(touchmode)">
-						<param name="scrollbar_id" value="4510"/>
-					</include>
+					<!-- Carousel -->
+					<control type="panel" id="4501">
+						<orientation>horizontal</orientation>
+						<left>0</left>
+						<top>0</top>
+						<width>100%</width>
+						<height>640</height>
+						<onup>9000</onup>
+						<scrolltime tween="cubic" easing="out">500</scrolltime>
+						<itemlayout width="100%" height="640">
+							<control type="image">
+								<left>0</left>
+								<top>0</top>
+								<width>100%</width>
+								<height>640</height>
+								<aspectratio>scale</aspectratio>
+								<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
+							</control>
+							<control type="label">
+								<left>40</left>
+								<bottom>40</bottom>
+								<width>80%</width>
+								<height>50</height>
+								<font>font28</font>
+								<textcolor>FFE3E2E6</textcolor>
+								<shadowcolor>text_shadow</shadowcolor>
+								<label>$INFO[ListItem.Label]</label>
+							</control>
+						</itemlayout>
+						<focusedlayout width="100%" height="640">
+							<control type="image">
+								<left>0</left>
+								<top>0</top>
+								<width>100%</width>
+								<height>640</height>
+								<aspectratio>scale</aspectratio>
+								<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
+							</control>
+							<control type="label">
+								<left>40</left>
+								<bottom>40</bottom>
+								<width>80%</width>
+								<height>50</height>
+								<font>font28</font>
+								<textcolor>FFE3E2E6</textcolor>
+								<shadowcolor>text_shadow</shadowcolor>
+								<label>$INFO[ListItem.Label]</label>
+							</control>
+						</focusedlayout>
+						<content sortby="random" sortorder="descending" limit="10">
+							<source path="videodb://recentlyaddedmovies/" target="videos" />
+						</content>
+					</control>
+					<!-- Rounded corner mask -->
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>100%</width>
+						<height>640</height>
+						<texture border="16">rounded_mask.png</texture>
+					</control>
 				</control>
 				<control type="group" id="5000">
 					<visible>String.IsEqual(Window(Home).Property(nav_id),movies)</visible>
@@ -883,9 +929,9 @@
 			<!-- Top Navigation Bar -->
 			<control type="group">
 				<depth>DepthBars</depth>
-				<top>30</top>
-				<left>80</left>
-				<right>80</right>
+				<top>64</top>
+				<left>116</left>
+				<right>116</right>
 				<height>64</height>
 				<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>

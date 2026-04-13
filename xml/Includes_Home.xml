@@ -14,7 +14,7 @@
 		<param name="item_treshold">0</param>
 		<definition>
 			<control type="label" id="$PARAM[list_id]666">
-				<left>55</left>
+				<left>0</left>
 				<top>80</top>
 				<width>900</width>
 				<height>90</height>
@@ -49,7 +49,7 @@
 				</include>
 				<itemlayout width="310" height="486">
 					<control type="group">
-						<left>68</left>
+						<left>0</left>
 						<top>10</top>
 						<include content="InfoWallMovieLayout">
 							<param name="focused" value="false" />
@@ -59,7 +59,7 @@
 				<focusedlayout width="310" height="486">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
-						<left>68</left>
+						<left>0</left>
 						<top>10</top>
 						<animation type="Focus">
 							<effect type="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="230,130" />
@@ -177,7 +177,7 @@
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
 				<itemlayout width="310" height="500">
 					<control type="group">
-						<left>70</left>
+						<left>0</left>
 						<top>5</top>
 						<include content="InfoWallEpisodeLayout">
 							<param name="main_label" value="$PARAM[main_label]" />
@@ -190,7 +190,7 @@
 				<focusedlayout width="310" height="500">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
-						<left>70</left>
+						<left>0</left>
 						<top>5</top>
 						<animation type="Focus">
 							<effect type="zoom" start="100" end="112" time="200" tween="sine" easing="inout" center="230,120" />
@@ -243,7 +243,7 @@
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
 				<itemlayout width="310" height="500">
 					<control type="group">
-						<left>70</left>
+						<left>0</left>
 						<include content="InfoWallMusicLayout">
 							<param name="main_label" value="$PARAM[main_label]" />
 							<param name="single_label" value="$PARAM[single_label]" />
@@ -255,7 +255,7 @@
 				<focusedlayout width="310" height="500">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
-						<left>70</left>
+						<left>0</left>
 						<animation type="Focus">
 							<effect type="zoom" start="100" end="112" time="200" tween="sine" easing="inout" center="240,120" />
 						</animation>
@@ -304,7 +304,7 @@
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
 				<itemlayout width="310" height="340">
 					<control type="group">
-						<left>70</left>
+						<left>0</left>
 						<control type="image">
 							<width>316</width>
 							<height>200</height>
@@ -336,7 +336,7 @@
 				<focusedlayout width="310" height="340">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
-						<left>70</left>
+						<left>0</left>
 						<animation type="Focus">
 							<effect type="zoom" start="100" end="115" time="200" tween="sine" easing="inout" center="228,70" />
 						</animation>
@@ -438,7 +438,7 @@
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,$PARAM[item_treshold]) | [Container($PARAM[list_id]).IsUpdating + Integer.IsEqual(Container($PARAM[list_id]).NumItems,0)]</visible>
 				<itemlayout width="310" height="500" infoupdate="$PARAM[info_update]">
 					<control type="group">
-						<left>70</left>
+						<left>0</left>
 						<control type="image">
 							<width>319</width>
 							<height>340</height>
@@ -523,7 +523,7 @@
 				<focusedlayout width="310" height="500" infoupdate="$PARAM[info_update]">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
-						<left>70</left>
+						<left>0</left>
 						<animation type="Focus">
 							<effect type="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="240,100" />
 						</animation>
@@ -644,7 +644,7 @@
 				<visible>$PARAM[visible]</visible>
 				<itemlayout width="$PARAM[width]" height="320">
 					<control type="group">
-						<left>70</left>
+						<left>0</left>
 						<control type="image">
 							<left>0</left>
 							<top>20</top>
@@ -688,7 +688,7 @@
 				</itemlayout>
 				<focusedlayout width="$PARAM[width]" height="400">
 					<control type="group">
-						<left>70</left>
+						<left>0</left>
 						<depth>DepthContentPopout</depth>
 						<animation type="Focus">
 							<effect type="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="180,140" />
