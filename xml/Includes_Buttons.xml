@@ -321,6 +321,48 @@
 			</control>
 		</definition>
 	</include>
+	<include name="NavButton">
+		<param name="width">180</param>
+		<param name="height">60</param>
+		<definition>
+			<focusedlayout width="$PARAM[width]" height="$PARAM[height]">
+				<control type="label">
+					<left>0</left>
+					<top>0</top>
+					<width>$PARAM[width]</width>
+					<height>$PARAM[height]</height>
+					<aligny>center</aligny>
+					<align>center</align>
+					<font>font13</font>
+					<textcolor>white</textcolor>
+					<label>$INFO[ListItem.Label]</label>
+					<shadowcolor>text_shadow</shadowcolor>
+				</control>
+				<!-- Active indicator bar -->
+				<control type="image">
+					<left>30</left>
+					<bottom>0</bottom>
+					<width>120</width>
+					<height>3</height>
+					<texture colordiffuse="button_focus">colors/white.png</texture>
+				</control>
+			</focusedlayout>
+			<itemlayout width="$PARAM[width]" height="$PARAM[height]">
+				<control type="label">
+					<left>0</left>
+					<top>0</top>
+					<width>$PARAM[width]</width>
+					<height>$PARAM[height]</height>
+					<aligny>center</aligny>
+					<align>center</align>
+					<font>font13</font>
+					<textcolor>grey</textcolor>
+					<label>$INFO[ListItem.Label]</label>
+					<shadowcolor>text_shadow</shadowcolor>
+				</control>
+			</itemlayout>
+		</definition>
+	</include>
 	<include name="ButtonMenuList">
 		<left>0</left>
 		<top>80</top>

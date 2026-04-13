@@ -910,42 +910,7 @@
 						<ondown>SetFocus($INFO[Container(9000).ListItem.Property(menu_id)])</ondown>
 						<onright>801</onright>
 						<scrolltime tween="cubic" easing="out">300</scrolltime>
-						<focusedlayout width="180" height="60">
-							<control type="label">
-								<left>0</left>
-								<top>0</top>
-								<width>180</width>
-								<height>54</height>
-								<aligny>center</aligny>
-								<align>center</align>
-								<font>font13</font>
-								<textcolor>white</textcolor>
-								<label>$INFO[ListItem.Label]</label>
-								<shadowcolor>text_shadow</shadowcolor>
-							</control>
-							<!-- Active indicator bar -->
-							<control type="image">
-								<left>30</left>
-								<bottom>0</bottom>
-								<width>120</width>
-								<height>3</height>
-								<texture colordiffuse="button_focus">colors/white.png</texture>
-							</control>
-						</focusedlayout>
-						<itemlayout width="180" height="60">
-							<control type="label">
-								<left>0</left>
-								<top>0</top>
-								<width>180</width>
-								<height>54</height>
-								<aligny>center</aligny>
-								<align>center</align>
-								<font>font13</font>
-								<textcolor>grey</textcolor>
-								<label>$INFO[ListItem.Label]</label>
-								<shadowcolor>text_shadow</shadowcolor>
-							</control>
-						</itemlayout>
+						<include>NavButton</include>
 						<content>
 							<item>
 								<label>Home</label>
