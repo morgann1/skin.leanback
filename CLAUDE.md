@@ -4,15 +4,15 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this is
 
-A **Kodi skin** (a GUI theme add-on) — a fork/derivative of Kodi's default **Estuary** skin, packaged as `skin.leanback`. There is no application source code, compilation step, or test suite. The entire UI is declarative **Kodi skinning XML**: windows, dialogs, and reusable includes interpreted by Kodi's GUI engine at runtime.
+A **Kodi skin** (a GUI theme add-on) — **Leanback** (`skin.leanback`), derived from Kodi's default **Estuary** skin. There is no application source code, compilation step, or test suite. The entire UI is declarative **Kodi skinning XML**: windows, dialogs, and reusable includes interpreted by Kodi's GUI engine at runtime.
 
-Note the identity mismatch: `addon.xml` still declares `id="skin.estuary"` / `name="Estuary"` while the repo and git remote are `skin.leanback`. Preserve existing IDs unless a change is explicitly requested — changing the addon id breaks upgrades for installed users.
+`addon.xml` declares `id="skin.leanback"` / `name="Leanback"`. Preserve the addon id unless a change is explicitly requested — changing it breaks upgrades for installed users.
 
 ## Working with the skin (build / test / run)
 
 There is no build or lint. To see changes, load the skin into Kodi:
 
-- Copy or symlink this folder into Kodi's `addons/` directory as `skin.estuary` (matching the addon id), then select it in Settings → Interface → Skin.
+- Copy or symlink this folder into Kodi's `addons/` directory as `skin.leanback` (matching the addon id), then select it in Settings → Interface → Skin.
 - After editing XML, reload without restarting Kodi: **Settings → Interface → Skin → hold/right-click the skin → "Reset above settings to default"** is not it — use the debug reload: with `debugging="true"` in `addon.xml`'s `<extension point="xbmc.gui.skin">`, press the reload key, or run the built-in `ReloadSkin()` (map to a key or execute via JSON-RPC). Kodi logs XML parse errors to `kodi.log`.
 - `<res>` entries in `addon.xml` all point at the single `folder="xml"`; there is no per-resolution XML — layouts scale via coordinates against the base 1920×1080 (16:9 is `default="true"`).
 
